@@ -1,0 +1,16 @@
+{
+  "group": "sumedrugs",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sumedrugs:weedseeds"
+    },
+    {
+      "item": "minecraft:flower_pot"
+    }
+  ],
+  "result": {
+    "item": "sumedrugs:weedplant",
+    "count": 1
+  }
+}

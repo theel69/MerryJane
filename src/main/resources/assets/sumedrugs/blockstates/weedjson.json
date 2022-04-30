@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "sumedrugs:weedjson"
+    },
+    "facing=north": {
+      "model": "sumedrugs:weedjson"
+    },
+    "facing=east": {
+      "model": "sumedrugs:weedjson",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "sumedrugs:weedjson",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sumedrugs:weedjson",
+      "y": 270
+    }
+  }
+}
