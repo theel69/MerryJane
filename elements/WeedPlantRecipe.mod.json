@@ -37,7 +37,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:WeedPlant"
+      "value": "CUSTOM:WeedJson"
     },
     "name": "weedplantrecipe",
     "namespace": "mod"

@@ -44,7 +44,7 @@ public class ProcedureWeedSeedSpawn extends ElementsSUMEDrugs.ModElement {
 		World world = (World) dependencies.get("world");
 		double randomDrop = 0;
 		randomDrop = (double) Math.random();
-		if ((((randomDrop) >= 0.66) && (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.TALLGRASS
+		if ((((randomDrop) >= 0.95) && (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.TALLGRASS
 				.getStateFromMeta(1).getBlock())
 				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.TALLGRASS.getStateFromMeta(2).getBlock())))) {
 			if (!world.isRemote) {
