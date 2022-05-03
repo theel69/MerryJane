@@ -83,15 +83,7 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "int"
-          },
-          {
             "name": "y",
-            "type": "int"
-          },
-          {
-            "name": "z",
             "type": "int"
           },
           {
@@ -108,6 +100,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "SmokeAJoint",
+      "type": "achievement",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -115,7 +115,9 @@
   "language_map": {
     "en_us": {
       "tile.weedjson.name": "Plant Pot with Weed",
+      "advancements.smokeajoint.descr": "Smoke Your First Joint",
       "item.weedseeds.name": "Weed Seeds",
+      "advancements.smokeajoint.title": "Smoke A Joint",
       "item.mj.name": "MJ",
       "item.joint.name": "Joint",
       "itemGroup.tabtab": "SUME Drugs"

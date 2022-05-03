@@ -1,0 +1,31 @@
+{
+  "display": {
+    "background": "minecraft:textures/blocks/stone.png",
+    "icon": {
+      "item": "sumedrugs:mj"
+    },
+    "title": {
+      "translate": "advancements.smokeajoint.title"
+    },
+    "description": {
+      "translate": "advancements.smokeajoint.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "smokeajoint": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "sumedrugs:joint"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}
