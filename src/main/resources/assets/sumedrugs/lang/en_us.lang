@@ -3,5 +3,7 @@ advancements.smokeajoint.descr=Smoke Your First Joint
 item.weedseeds.name=Weed Seeds
 advancements.smokeajoint.title=Smoke A Joint
 item.mj.name=MJ
+tile.stage2.name=Plant Pot with Weed2
+tile.stage1.name=Plant Pot with Weed1
 item.joint.name=Joint
 itemGroup.tabtab=SUME Drugs

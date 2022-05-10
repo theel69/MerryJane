@@ -108,6 +108,22 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Stage1",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Stage2",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -119,6 +135,8 @@
       "item.weedseeds.name": "Weed Seeds",
       "advancements.smokeajoint.title": "Smoke A Joint",
       "item.mj.name": "MJ",
+      "tile.stage2.name": "Plant Pot with Weed2",
+      "tile.stage1.name": "Plant Pot with Weed1",
       "item.joint.name": "Joint",
       "itemGroup.tabtab": "SUME Drugs"
     }
