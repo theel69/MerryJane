@@ -1,0 +1,8 @@
+{
+  "parent": "sumedrugs:custom/weedstage5",
+  "textures": {
+    "all": "sumedrugs:blocks/stage5",
+    "particle": "sumedrugs:blocks/stage5",
+    "0": "sumedrugs:blocks/stage5"
+  }
+}

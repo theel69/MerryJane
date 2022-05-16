@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "stage5"
+      },
+      "name": "default"
+    }
+  }
+}

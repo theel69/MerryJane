@@ -1,9 +1,9 @@
 {
-  "blunt": {
+  "joint": {
     "category": "player",
     "sounds": [
       {
-        "name": "sumedrugs:bluntsmoken",
+        "name": "sumedrugs:jointsmoken",
         "stream": false
       }
     ]

@@ -11,9 +11,11 @@ import net.minecraft.world.World;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
@@ -30,6 +32,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.Block;
 
+import net.mcreator.sumedrugs.item.ItemWeedSeeds;
 import net.mcreator.sumedrugs.creativetab.TabTab;
 import net.mcreator.sumedrugs.ElementsSUMEDrugs;
 
@@ -126,6 +129,11 @@ public class BlockWeedJson extends ElementsSUMEDrugs.ModElement {
 		@Override
 		public boolean canSilkHarvest(World world, BlockPos pos, IBlockState state, EntityPlayer player) {
 			return false;
+		}
+
+		@Override
+		public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
+			drops.add(new ItemStack(ItemWeedSeeds.block, (int) (1)));
 		}
 	}
 }

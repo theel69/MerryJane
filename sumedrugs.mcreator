@@ -141,13 +141,21 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Stage5",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
   "sound_elements": [
     {
-      "name": "blunt",
-      "file": "bluntsmoken",
+      "name": "joint",
+      "file": "jointsmoken",
       "category": "player"
     }
   ],
@@ -155,14 +163,15 @@
     "en_us": {
       "advancements.smokeajoint.descr": "Smoke Your First Joint",
       "item.weedseeds.name": "Weed Seeds",
+      "tile.stage3.name": "Plant Pot with Weed3",
+      "tile.stage0.name": "Plant Pot with Weed",
+      "tile.stage5.name": "Plant Pot with Weed5",
       "advancements.smokeajoint.title": "Smoke A Joint",
       "item.mj.name": "MJ",
       "tile.stage2.name": "Plant Pot with Weed2",
       "tile.stage1.name": "Plant Pot with Weed1",
       "item.joint.name": "Joint",
-      "tile.stage3.name": "Plant Pot with Weed3",
       "itemGroup.tabtab": "SUME Drugs",
-      "tile.stage0.name": "Plant Pot with Weed",
       "tile.stage4.name": "Plant Pot with Weed4"
     }
   },

@@ -54,7 +54,7 @@ public class ElementsSUMEDrugs implements IFuelHandler, IWorldGenerator {
 	public final List<Supplier<Potion>> potions = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public ElementsSUMEDrugs() {
-		sounds.put(new ResourceLocation("sumedrugs", "blunt"), new net.minecraft.util.SoundEvent(new ResourceLocation("sumedrugs", "blunt")));
+		sounds.put(new ResourceLocation("sumedrugs", "joint"), new net.minecraft.util.SoundEvent(new ResourceLocation("sumedrugs", "joint")));
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {

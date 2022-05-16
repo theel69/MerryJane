@@ -37,29 +37,29 @@ import net.mcreator.sumedrugs.creativetab.TabTab;
 import net.mcreator.sumedrugs.ElementsSUMEDrugs;
 
 @ElementsSUMEDrugs.ModElement.Tag
-public class BlockStage3 extends ElementsSUMEDrugs.ModElement {
-	@GameRegistry.ObjectHolder("sumedrugs:stage3")
+public class BlockStage5 extends ElementsSUMEDrugs.ModElement {
+	@GameRegistry.ObjectHolder("sumedrugs:stage5")
 	public static final Block block = null;
-	public BlockStage3(ElementsSUMEDrugs instance) {
-		super(instance, 10);
+	public BlockStage5(ElementsSUMEDrugs instance) {
+		super(instance, 12);
 	}
 
 	@Override
 	public void initElements() {
-		elements.blocks.add(() -> new BlockCustom().setRegistryName("stage3"));
+		elements.blocks.add(() -> new BlockCustom().setRegistryName("stage5"));
 		elements.items.add(() -> new ItemBlock(block).setRegistryName(block.getRegistryName()));
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation("sumedrugs:stage3", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation("sumedrugs:stage5", "inventory"));
 	}
 	public static class BlockCustom extends Block {
 		public static final PropertyDirection FACING = BlockHorizontal.FACING;
 		public BlockCustom() {
 			super(Material.GRASS);
-			setUnlocalizedName("stage3");
+			setUnlocalizedName("stage5");
 			setSoundType(SoundType.PLANT);
 			setHardness(1F);
 			setResistance(10F);

@@ -31,7 +31,7 @@
     "destroyTool": "Not specified",
     "affectedBySilkTouch": false,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:WeedSeeds"
     },
     "dropAmount": 1,
     "isBeaconBase": false,
