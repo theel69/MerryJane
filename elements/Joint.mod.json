@@ -22,6 +22,9 @@
     "hasGlow": false,
     "onRightClickedInAir": {
       "name": "JointRightClickedInAir"
+    },
+    "onRightClickedOnBlock": {
+      "name": "JointRightClickedInAir"
     }
   }
 }

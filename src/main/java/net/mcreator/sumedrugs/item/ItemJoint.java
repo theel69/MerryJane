@@ -8,7 +8,10 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -77,6 +80,24 @@ public class ItemJoint extends ElementsSUMEDrugs.ModElement {
 				ProcedureJointRightClickedInAir.executeProcedure($_dependencies);
 			}
 			return ar;
+		}
+
+		@Override
+		public EnumActionResult onItemUseFirst(EntityPlayer entity, World world, BlockPos pos, EnumFacing direction, float hitX, float hitY,
+				float hitZ, EnumHand hand) {
+			EnumActionResult retval = super.onItemUseFirst(entity, world, pos, direction, hitX, hitY, hitZ, hand);
+			ItemStack itemstack = entity.getHeldItem(hand);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("y", y);
+				$_dependencies.put("world", world);
+				ProcedureJointRightClickedInAir.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }

@@ -1,1 +1,11 @@
-{}
+{
+  "blunt": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "sumedrugs:bluntsmoken",
+        "stream": false
+      }
+    ]
+  }
+}
