@@ -23,7 +23,8 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "registry_name": "stage0"
     },
     {
       "name": "WeedSeeds",
@@ -124,13 +125,28 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Stage3",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Stage4",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "tile.weedjson.name": "Plant Pot with Weed",
       "advancements.smokeajoint.descr": "Smoke Your First Joint",
       "item.weedseeds.name": "Weed Seeds",
       "advancements.smokeajoint.title": "Smoke A Joint",
@@ -138,7 +154,10 @@
       "tile.stage2.name": "Plant Pot with Weed2",
       "tile.stage1.name": "Plant Pot with Weed1",
       "item.joint.name": "Joint",
-      "itemGroup.tabtab": "SUME Drugs"
+      "tile.stage3.name": "Plant Pot with Weed3",
+      "itemGroup.tabtab": "SUME Drugs",
+      "tile.stage0.name": "Plant Pot with Weed",
+      "tile.stage4.name": "Plant Pot with Weed4"
     }
   },
   "workspaceSettings": {

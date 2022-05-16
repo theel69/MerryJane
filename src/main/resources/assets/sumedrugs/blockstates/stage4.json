@@ -1,21 +1,21 @@
 {
   "variants": {
     "normal": {
-      "model": "sumedrugs:weedjson"
+      "model": "sumedrugs:stage4"
     },
     "facing=north": {
-      "model": "sumedrugs:weedjson"
+      "model": "sumedrugs:stage4"
     },
     "facing=east": {
-      "model": "sumedrugs:weedjson",
+      "model": "sumedrugs:stage4",
       "y": 90
     },
     "facing=south": {
-      "model": "sumedrugs:weedjson",
+      "model": "sumedrugs:stage4",
       "y": 180
     },
     "facing=west": {
-      "model": "sumedrugs:weedjson",
+      "model": "sumedrugs:stage4",
       "y": 270
     }
   }

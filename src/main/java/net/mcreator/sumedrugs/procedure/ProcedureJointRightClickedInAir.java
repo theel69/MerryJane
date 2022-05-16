@@ -3,9 +3,6 @@ package net.mcreator.sumedrugs.procedure;
 import net.minecraft.world.WorldServer;
 import net.minecraft.world.World;
 import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.potion.PotionEffect;
-import net.minecraft.init.MobEffects;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.sumedrugs.ElementsSUMEDrugs;
@@ -46,12 +43,6 @@ public class ProcedureJointRightClickedInAir extends ElementsSUMEDrugs.ModElemen
 													entity.getLook(1f).z * 1),
 											false, false, true)
 									.getBlockPos().getZ()),
-							(int) 5, 0, 0, 0, 0, new int[0]);
-		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.NAUSEA, (int) 60, (int) 2));
-		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.HUNGER, (int) 60, (int) 2));
-		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.REGENERATION, (int) 60, (int) 2));
+							(int) 5, 0, 0, 0, 0.5, new int[0]);
 	}
 }

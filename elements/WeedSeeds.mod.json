@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "weedseed",
+    "texture": "seeds",
     "customModelName": "Normal",
     "name": "Weed Seeds",
     "creativeTab": {
