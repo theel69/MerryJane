@@ -2,21 +2,6 @@
   "variants": {
     "normal": {
       "model": "sumedrugs:stage3"
-    },
-    "facing=north": {
-      "model": "sumedrugs:stage3"
-    },
-    "facing=east": {
-      "model": "sumedrugs:stage3",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "sumedrugs:stage3",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "sumedrugs:stage3",
-      "y": 270
     }
   }
 }

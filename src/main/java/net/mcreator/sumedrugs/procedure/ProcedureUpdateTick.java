@@ -68,11 +68,11 @@ public class ProcedureUpdateTick extends ElementsSUMEDrugs.ModElement {
 				randomGrowth = (double) Math.random();
 				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockWeedJson.block.getDefaultState().getBlock())) {
 					if (((randomGrowth) >= 0.66)) {
+						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
 						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockStage1.block.getDefaultState(), 3);
+					} else if (((randomGrowth) >= 0.33)) {
 						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
-					} else if (((randomGrowth) >= 0.66)) {
 						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockStage2.block.getDefaultState(), 3);
-						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
 					}
 					if (!world.isRemote) {
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
@@ -85,11 +85,11 @@ public class ProcedureUpdateTick extends ElementsSUMEDrugs.ModElement {
 				} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockStage1.block.getDefaultState()
 						.getBlock())) {
 					if (((randomGrowth) >= 0.66)) {
+						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
 						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockStage2.block.getDefaultState(), 3);
+					} else if (((randomGrowth) >= 0.33)) {
 						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
-					} else if (((randomGrowth) >= 0.66)) {
 						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockStage3.block.getDefaultState(), 3);
-						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
 					}
 					if (!world.isRemote) {
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
@@ -102,11 +102,11 @@ public class ProcedureUpdateTick extends ElementsSUMEDrugs.ModElement {
 				} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockStage2.block.getDefaultState()
 						.getBlock())) {
 					if (((randomGrowth) >= 0.66)) {
+						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
 						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockStage3.block.getDefaultState(), 3);
+					} else if (((randomGrowth) >= 0.33)) {
 						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
-					} else if (((randomGrowth) >= 0.66)) {
 						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockStage4.block.getDefaultState(), 3);
-						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
 					}
 					if (!world.isRemote) {
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
@@ -119,11 +119,11 @@ public class ProcedureUpdateTick extends ElementsSUMEDrugs.ModElement {
 				} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockStage3.block.getDefaultState()
 						.getBlock())) {
 					if (((randomGrowth) >= 0.66)) {
+						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
 						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockStage4.block.getDefaultState(), 3);
+					} else if (((randomGrowth) >= 0.33)) {
 						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
-					} else if (((randomGrowth) >= 0.66)) {
 						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockStage5.block.getDefaultState(), 3);
-						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
 					}
 					if (!world.isRemote) {
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
@@ -136,8 +136,8 @@ public class ProcedureUpdateTick extends ElementsSUMEDrugs.ModElement {
 				} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockStage4.block.getDefaultState()
 						.getBlock())) {
 					if (((randomGrowth) >= 0.5)) {
-						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockStage5.block.getDefaultState(), 3);
 						world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
+						world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockStage5.block.getDefaultState(), 3);
 					}
 					if (!world.isRemote) {
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
