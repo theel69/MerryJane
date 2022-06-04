@@ -31,7 +31,7 @@
     "destroyTool": "Not specified",
     "affectedBySilkTouch": false,
     "customDrop": {
-      "value": "CUSTOM:WeedSeeds"
+      "value": "CUSTOM:WeedJson"
     },
     "dropAmount": 1,
     "isBeaconBase": false,
@@ -42,12 +42,12 @@
     "material": {
       "value": "GRASS"
     },
-    "tickRate": 10,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "FOLIAGE",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:WeedJson"
     },
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -69,13 +69,13 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "inventorySize": 0,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
-    "inventoryComparatorPower": true,
+    "inventoryDropWhenDestroyed": false,
+    "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [],
     "onRightClicked": {
       "name": "Bud"

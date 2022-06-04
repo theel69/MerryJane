@@ -133,10 +133,12 @@ public class ProcedureBonemeal extends ElementsSUMEDrugs.ModElement {
 					}
 				}
 			}
-			if (entity instanceof EntityPlayer)
-				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(Items.DYE, (int) (1), 15).getItem(), 15, (int) 1, null);
 			if (world instanceof WorldServer)
-				((WorldServer) world).spawnParticle(EnumParticleTypes.CRIT, x, y, z, (int) 5, 3, 3, 3, 1, new int[0]);
+				((WorldServer) world).spawnParticle(EnumParticleTypes.CRIT, x, (y + 1.5), z, (int) 5, 3, 3, 3, 0.1, new int[0]);
+			if ((!((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).capabilities.isCreativeMode : false))) {
+				if (entity instanceof EntityPlayer)
+					((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(Items.DYE, (int) (1), 15).getItem(), 15, (int) 1, null);
+			}
 		}
 	}
 

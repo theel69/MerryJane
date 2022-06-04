@@ -9,8 +9,6 @@ import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.tileentity.TileEntityLockableLoot;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.init.Items;
 import net.minecraft.entity.player.EntityPlayer;
@@ -22,8 +20,6 @@ import net.mcreator.sumedrugs.item.ItemWeedBud;
 import net.mcreator.sumedrugs.block.BlockStage5;
 import net.mcreator.sumedrugs.block.BlockStage4;
 import net.mcreator.sumedrugs.ElementsSUMEDrugs;
-
-import java.util.Random;
 
 @ElementsSUMEDrugs.ModElement.Tag
 public class ProcedureBud extends ElementsSUMEDrugs.ModElement {
@@ -57,32 +53,19 @@ public class ProcedureBud extends ElementsSUMEDrugs.ModElement {
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockStage5.block.getDefaultState().getBlock())) {
-			if ((((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-					.getItem() == new ItemStack(Items.SHEARS, (int) (1)).getItem())) {
-				world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockStage4.block.getDefaultState(), 3);
-				if (!world.isRemote) {
-					EntityItem entityToSpawn = new EntityItem(world, x, (y + 1), z, new ItemStack(ItemWeedBud.block, (int) (1)));
-					entityToSpawn.setPickupDelay(10);
-					world.spawnEntity(entityToSpawn);
-				}
-				world.playSound((EntityPlayer) null, x, y, z,
-						(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("")),
-						SoundCategory.NEUTRAL, (float) 1, (float) 1);
-				{
-					TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-					if (inv != null && (inv instanceof TileEntityLockableLoot)) {
-						ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot((int) (0));
-						if (stack != null) {
-							if (stack.attemptDamageItem((int) 1, new Random(), null)) {
-								stack.shrink(1);
-								stack.setItemDamage(0);
-							}
-						}
-					}
-				}
+		if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockStage5.block.getDefaultState().getBlock())
+				&& (((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+						.getItem() == new ItemStack(Items.SHEARS, (int) (1)).getItem()))) {
+			world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockStage4.block.getDefaultState(), 3);
+			if (!world.isRemote) {
+				EntityItem entityToSpawn = new EntityItem(world, x, (y + 1), z, new ItemStack(ItemWeedBud.block, (int) (1)));
+				entityToSpawn.setPickupDelay(10);
+				world.spawnEntity(entityToSpawn);
 			}
+			world.playSound((EntityPlayer) null, x, y, z,
+					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("")), SoundCategory.NEUTRAL,
+					(float) 1, (float) 1);
 		}
 	}
 
