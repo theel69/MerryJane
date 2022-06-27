@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "sumedrugs:mj"
+      "item": "sumedrugs:weedbud"
     },
     "title": {
-      "translate": "advancements.smokeajoint.title"
+      "translate": "advancements.obtainbud.title"
     },
     "description": {
-      "translate": "advancements.smokeajoint.descr"
+      "translate": "advancements.obtainbud.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,15 +15,15 @@
     "hidden": false
   },
   "criteria": {
-    "smokeajoint": {
+    "obtainbud": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "sumedrugs:joint",
+            "item": "sumedrugs:weedbud",
             "count": {
               "min": 1,
-              "max": 1
+              "max": 64
             }
           }
         ]
@@ -33,5 +33,5 @@
   "rewards": {
     "experience": 1
   },
-  "parent": "sumedrugs:obtainbud"
+  "parent": "sumedrugs:weedgrowin"
 }

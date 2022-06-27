@@ -1,13 +1,14 @@
 {
   "display": {
+    "background": "minecraft:textures/blocks/stone.png",
     "icon": {
-      "item": "sumedrugs:mj"
+      "item": "sumedrugs:weedseeds"
     },
     "title": {
-      "translate": "advancements.smokeajoint.title"
+      "translate": "advancements.weedseed.title"
     },
     "description": {
-      "translate": "advancements.smokeajoint.descr"
+      "translate": "advancements.weedseed.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,12 +16,12 @@
     "hidden": false
   },
   "criteria": {
-    "smokeajoint": {
+    "weedseed": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "sumedrugs:joint",
+            "item": "sumedrugs:weedseeds",
             "count": {
               "min": 1,
               "max": 1
@@ -32,6 +33,5 @@
   },
   "rewards": {
     "experience": 1
-  },
-  "parent": "sumedrugs:obtainbud"
+  }
 }

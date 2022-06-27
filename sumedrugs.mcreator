@@ -249,6 +249,30 @@
           }
         ]
       }
+    },
+    {
+      "name": "ObtainBud",
+      "type": "achievement",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WeedSeed",
+      "type": "achievement",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WeedGrowin",
+      "type": "achievement",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -261,17 +285,23 @@
   ],
   "language_map": {
     "en_us": {
-      "advancements.smokeajoint.descr": "Smoke Your First Joint",
+      "advancements.smokeajoint.descr": "Have Possession of a Joint",
+      "advancements.weedgrowin.title": "Weed Growin",
       "item.weedseeds.name": "Weed Seeds",
       "tile.stage3.name": "Plant Pot with Weed3",
+      "advancements.obtainbud.title": "Ganja",
       "tile.stage0.name": "Plant Pot with Weed",
       "item.weedbud.name": "Weed Bud",
       "tile.stage5.name": "Plant Pot with Weed5",
-      "advancements.smokeajoint.title": "Smoke A Joint",
+      "advancements.weedseed.descr": "Obtain Seeds for the Cannabis Plant",
+      "advancements.smokeajoint.title": "Joint Smokin\u0027",
       "item.mj.name": "MJ",
       "tile.stage2.name": "Plant Pot with Weed2",
+      "advancements.obtainbud.descr": "Obtain a Flowering Weed Bud",
+      "advancements.weedgrowin.descr": "Plant a Weed Plant",
       "tile.stage1.name": "Plant Pot with Weed1",
       "item.joint.name": "Joint",
+      "advancements.weedseed.title": "Seeds",
       "itemGroup.tabtab": "SUME Drugs",
       "tile.stage4.name": "Plant Pot with Weed4"
     }
