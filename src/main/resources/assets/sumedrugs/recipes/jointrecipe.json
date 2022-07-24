@@ -1,0 +1,16 @@
+{
+  "group": "sumedrugs",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "sumedrugs:weedbud"
+    }
+  ],
+  "result": {
+    "item": "sumedrugs:joint",
+    "count": 1
+  }
+}

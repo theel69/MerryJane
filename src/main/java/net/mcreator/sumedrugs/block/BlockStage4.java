@@ -12,6 +12,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.EnumFacing;
@@ -87,6 +88,16 @@ public class BlockStage4 extends ElementsSUMEDrugs.ModElement {
 		@Override
 		public BlockRenderLayer getBlockLayer() {
 			return BlockRenderLayer.CUTOUT;
+		}
+
+		@Override
+		public boolean isFullCube(IBlockState state) {
+			return false;
+		}
+
+		@Override
+		public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+			return new AxisAlignedBB(0.17D, 0D, 0.17D, 0.83D, 1.6D, 0.83D);
 		}
 
 		@Override

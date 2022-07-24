@@ -1,0 +1,20 @@
+{
+  "group": "sumedrugs",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 3
+    },
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "result": {
+    "item": "sumedrugs:brownie",
+    "count": 2
+  }
+}

@@ -57,7 +57,7 @@ public class ItemJoint extends ElementsSUMEDrugs.ModElement {
 
 		@Override
 		public int getMaxItemUseDuration(ItemStack itemstack) {
-			return 0;
+			return 1;
 		}
 
 		@Override
