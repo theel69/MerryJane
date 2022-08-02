@@ -9,6 +9,7 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.NonNullList;
@@ -31,7 +32,6 @@ import net.minecraft.block.Block;
 import net.mcreator.sumedrugs.procedure.ProcedureUpdateTick;
 import net.mcreator.sumedrugs.procedure.ProcedureBonemeal;
 import net.mcreator.sumedrugs.item.ItemWeedSeeds;
-import net.mcreator.sumedrugs.creativetab.TabTab;
 import net.mcreator.sumedrugs.ElementsSUMEDrugs;
 
 import java.util.Random;
@@ -64,7 +64,7 @@ public class BlockStage3 extends ElementsSUMEDrugs.ModElement {
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(0);
-			setCreativeTab(TabTab.tab);
+			setCreativeTab(null);
 		}
 
 		@SideOnly(Side.CLIENT)
@@ -91,6 +91,11 @@ public class BlockStage3 extends ElementsSUMEDrugs.ModElement {
 		@Override
 		public EnumPushReaction getMobilityFlag(IBlockState state) {
 			return EnumPushReaction.DESTROY;
+		}
+
+		@Override
+		public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player) {
+			return new ItemStack(BlockWeedJson.block, (int) (1));
 		}
 
 		@Override

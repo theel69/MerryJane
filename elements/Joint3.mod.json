@@ -1,0 +1,38 @@
+{
+  "_fv": 6,
+  "_type": "gun",
+  "definition": {
+    "renderType": 1,
+    "texture": "blunt",
+    "customModelName": "blunt:default",
+    "name": "Joint3",
+    "creativeTab": {
+      "value": "CUSTOM:Tab"
+    },
+    "stackSize": 16,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "CUSTOM:joint"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 0.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:WeedBud"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onRangedItemUsed": {
+      "name": "Joint3w"
+    }
+  }
+}

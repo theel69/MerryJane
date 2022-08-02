@@ -26,12 +26,12 @@
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:Tab"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "affectedBySilkTouch": false,
     "customDrop": {
-      "value": "CUSTOM:WeedJson"
+      "value": "CUSTOM:WeedSeeds"
     },
     "dropAmount": 1,
     "isBeaconBase": false,

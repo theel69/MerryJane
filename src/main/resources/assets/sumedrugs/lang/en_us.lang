@@ -1,6 +1,7 @@
 advancements.smokeajoint.descr=Have Possession of a Joint
 advancements.weedgrowin.title=Weed Growin'
 item.weedseeds.name=Weed Seeds
+item.joint2.name=Joint2
 advancements.weedbrowniead.title=Getting Smeezy With Brownies
 tile.stage3.name=Plant Pot with Weed3
 advancements.obtainbud.title=Ganja
@@ -23,3 +24,4 @@ tile.stage2.name=Plant Pot with Weed2
 item.brownie.name=Brownie
 advancements.weedbrowniead.descr=Consume a Brownie with Weed
 itemGroup.tabtab=SUME Drugs
+item.joint3.name=Joint3

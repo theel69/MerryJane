@@ -1,5 +1,7 @@
 {
-  "id_map": {},
+  "id_map": {
+    "ENTITY": 1
+  },
   "mod_elements": [
     {
       "name": "MJ",
@@ -345,6 +347,72 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Joint2",
+      "type": "food",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Joint2w",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Joint3w",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Joint3",
+      "type": "gun",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1
+      }
     }
   ],
   "variable_elements": [],
@@ -360,6 +428,7 @@
       "advancements.smokeajoint.descr": "Have Possession of a Joint",
       "advancements.weedgrowin.title": "Weed Growin\u0027",
       "item.weedseeds.name": "Weed Seeds",
+      "item.joint2.name": "Joint2",
       "advancements.weedbrowniead.title": "Getting Smeezy With Brownies",
       "tile.stage3.name": "Plant Pot with Weed3",
       "advancements.obtainbud.title": "Ganja",
@@ -381,7 +450,8 @@
       "tile.stage2.name": "Plant Pot with Weed2",
       "item.brownie.name": "Brownie",
       "advancements.weedbrowniead.descr": "Consume a Brownie with Weed",
-      "itemGroup.tabtab": "SUME Drugs"
+      "itemGroup.tabtab": "SUME Drugs",
+      "item.joint3.name": "Joint3"
     }
   },
   "workspaceSettings": {

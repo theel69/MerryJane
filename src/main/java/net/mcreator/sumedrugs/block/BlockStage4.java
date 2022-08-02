@@ -43,7 +43,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.sumedrugs.procedure.ProcedureUpdateTick;
 import net.mcreator.sumedrugs.procedure.ProcedureBonemeal;
-import net.mcreator.sumedrugs.creativetab.TabTab;
+import net.mcreator.sumedrugs.item.ItemWeedSeeds;
 import net.mcreator.sumedrugs.ElementsSUMEDrugs;
 
 import java.util.Random;
@@ -81,7 +81,7 @@ public class BlockStage4 extends ElementsSUMEDrugs.ModElement {
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(0);
-			setCreativeTab(TabTab.tab);
+			setCreativeTab(null);
 		}
 
 		@SideOnly(Side.CLIENT)
@@ -137,7 +137,7 @@ public class BlockStage4 extends ElementsSUMEDrugs.ModElement {
 
 		@Override
 		public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
-			drops.add(new ItemStack(BlockWeedJson.block, (int) (1)));
+			drops.add(new ItemStack(ItemWeedSeeds.block, (int) (1)));
 		}
 
 		@Override
